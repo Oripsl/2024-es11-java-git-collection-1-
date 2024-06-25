@@ -31,7 +31,7 @@ public class DataHelper {
 
         List<Integer> list = new ArrayList<>();
         for (int i = 0; i < size; i++) {
-            list.add(random.nextInt(max + 1 - min) + min);
+            list.add(random.nextInt(max - min + 1) + min);
         }
         return list;
     }
@@ -71,7 +71,7 @@ public class DataHelper {
             Set<Integer> set = new HashSet<>();
 
             while (set.size() < size) {
-                set.add(random.nextInt(max + 1) - min);
+                set.add(random.nextInt(max - min + 1) + min);
             }
 
             return set;
