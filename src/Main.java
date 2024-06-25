@@ -4,11 +4,15 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
-        testRandomInteger();
-        System.out.println("//////////////////////////////////////");
-        testRandomUniqueInteger();
-        System.out.println("//////////////////////////////////////");
-        testFrequencyMap();
+        try {
+            testRandomInteger();
+            System.out.println("//////////////////////////////////////");
+            testRandomUniqueInteger();
+            System.out.println("//////////////////////////////////////");
+            testFrequencyMap();
+        } catch (Exception e ) {
+            System.out.println(e);
+        }
     }
 
     public static void testRandomInteger() {
