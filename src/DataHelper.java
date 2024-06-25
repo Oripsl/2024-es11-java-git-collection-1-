@@ -9,7 +9,7 @@ public class DataHelper {
 
         List<Integer> list = new ArrayList<>();
         for (int i = 0; i < size; i++) {
-            list.add(random.nextInt(size + 1));
+            list.add(random.nextInt(11));
         }
         return list;
     }
@@ -52,7 +52,7 @@ public class DataHelper {
         Set<Integer> set = new HashSet<>();
 
         while (set.size() < size) {
-            set.add(random.nextInt(size + 1));
+            set.add(random.nextInt(11));
         }
 
         return set;
